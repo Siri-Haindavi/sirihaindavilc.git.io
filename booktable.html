@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Crêpes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="headings">
+                <h1>Les Crêpes</h1>
+                <h2>Where Crepes meet Coffee!</h2>
+            </div>
+            <img src="Images/logo.jpg" alt="Les Crêpes Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href='index.html'>Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="booktable.html">Book A Table</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class = "book"> 
+                <h3>Book a Table</h3>
+            </div>
+        <div class="wrapper">
+            <div class="form-container">
+                <form id="bookingForm">
+                    <label for="people">Number of Guests:</label>
+                    <input type="number" id="people" name="people" min="1" required>
+
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" name="time" required>
+
+                    <label for="instructions">Special Instructions:</label>
+                    <textarea id="instructions" name="instructions"></textarea>
+
+                    <button type="submit" >Submit</button>
+                </form>
+            </div>
+
+            <div class="image-container">
+                <img src="Images/table.jpg" alt="Table Image" />
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section>
+        <div class = "Private-Events">
+            <h3>Private Events</h3>
+            <p> If you are interested in learning more about our offerings, please reach out to us to discuss further.</p>
+            <a href="contactus.html" class="contact-us-button">Contact Us</a>
+        </div>
+    </section>
+  
+    
+    </main>
+    <footer class="footer-info">
+        <div class="footer-content">
+            <div class="address">
+                <p>Store Location: <br> 299 Doon Valley Dr.,<br>Kitchener, ON N2G 4M4</p>
+            </div>
+            <div class="hours">
+                <p>Monday - Friday: 9 AM to 7 PM<br>Saturday: 10 AM to 7 PM<br>Sunday: Closed</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; <small>2023 Les Crêpes. All rights reserved.</p></div><small>
+        </div>
+    </footer>
+        <script>
+            document.getElementById('bookingForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent the default form submission
+                
+                const formData = {
+                    people: document.getElementById('people').value,
+                    date: document.getElementById('date').value,
+                    time: document.getElementById('time').value,
+                    instructions: document.getElementById('instructions').value
+                };
+
+                
+                alert("Thank you for booking! We have booked" + formData.people + " for " + formData.date + " at " + formData.time);
+            });
+        </script>
+    </body>
+    </html>

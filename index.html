@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Crêpes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+    <header>
+        <div class="nav-container">
+            <div class="headings">
+                <h1>Les Crêpes -</h1>
+                <h2>Sip, Savor and Smile !!</h2>
+            </div>
+            <img src="Images/logo.jpg" alt="Les Crêpes Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href='index.html'>Home</a></li>
+                    <li> <a href="menu.html">Menu</a> </li>
+                    <li><a href="booktable.html">Book A Table</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="gradient-overlay"></div> 
+                <img src="Images/Home1.png" alt="Delicious crepes and coffee at Les Crepes" class="main-image">
+                <div class="button-container">
+                    <a href="menu.html" class="slide-button menu-button">Menu</a> 
+                    <a href="booktable.html" class="slide-button reserve-button">Reserve</a> 
+            </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="gradient-overlay"></div> 
+                <img src="Images/Home3.jpg" alt="Fruits and drinks" class="main-image">
+                <div class="button-container">
+                    <a href="menu.html" class="slide-button menu-button">Menu</a> 
+                    <a href="booktable.html" class="slide-button reserve-button">Reserve</a> 
+            </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="gradient-overlay"></div> 
+                <img src="Images/Home2.jpg" alt="Crepe and Coffee" class="main-image">
+                <div class="button-container">
+                    <a href="menu.html" class="slide-button menu-button">Menu</a> 
+                    <a href="booktable.html" class="slide-button reserve-button">Reserve</a> 
+            </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="gradient-overlay"></div> 
+                <img src="Images/cafe.jpg" alt="Fruits and drinks" class="main-image">
+                <div class="button-container">
+                    <a href="menu.html" class="slide-button menu-button">Menu</a> 
+                    <a href="booktable.html" class="slide-button reserve-button">Reserve</a> 
+            </div>
+            </div>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot image-dot" onclick="currentSlide(1)"></span>
+                <span class="dot image-dot" onclick="currentSlide(2)"></span>
+                <span class="dot image-dot" onclick="currentSlide(3)"></span>
+                <span class="dot image-dot" onclick="currentSlide(4)"></span>
+            </div>
+            </div>
+
+
+            <section class="must-try-delights">
+                <h2><strong>Must-Try Delights</strong></h2>
+                <div class="delights-grid">
+                    <div class="delights-container">
+                        <div class="delight-item">
+                            <div class="image-overlay-container">
+                                <img src="Images/Ham.jpg" alt="Cheese Ham and Egg Crepe">
+                                <div class="image-text">Cheese Ham and Egg Crepe</div>
+                            </div>
+                        </div>
+                        <div class="delight-item">
+                            <div class="image-overlay-container">
+                                <img src="Images/hotchoco.jpg" alt="Hot Chocolate">
+                                <div class="image-text">Hot Chocolate</div>
+                            </div>
+                        </div>
+                        <div class="delight-item">
+                            <div class="image-overlay-container">
+                                <img src="Images/nutella.jpg" alt="Nutella Crepe">
+                                <div class="image-text">Nutella Crepe</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="delights-container">
+                        <div class="delight-item">
+                            <div class="image-overlay-container">
+                                <img src="Images/coldcoffee.jpg" alt="White Coffee Milk">
+                                <div class="image-text">White Coffee Milk</div>
+                            </div>
+                        </div>
+                        <div class="delight-item">
+                            <div class="image-overlay-container">
+                                <img src="Images/blueberry.jpg" alt="Blueberry Crepe">
+                                <div class="image-text">Blueberry Crepe</div>
+                            </div>
+                        </div>
+                        <div class="delight-item">
+                            <div class="image-overlay-container">
+                                <img src="Images/mocha.jpg" alt="Expresso">
+                                <div class="image-text">Expresso</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="review-section">
+                    <h2>Your Words - Our Pride</h2>
+                    <div class="reviews-container">
+                        <div class="reviewSlide">
+                            <div class="review">
+                                <p>"Great crepes and amazing coffee! Highly recommend. Very high quality food - fresh
+                                    and delicious. Excellent customer service."</p>
+                                <div class="star-rating">★★★★★</div>
+                            </div>
+
+                        </div>
+                        <div class="reviewSlide">
+                            <div class="review">
+                                <p>"Best crepe place in the region, the staff is extremely kind and put effort into all
+                                    the food they make"</p>
+                                <div class="star-rating">★★★★★</div>
+                            </div>
+
+                        </div>
+                        <div class="reviewSlide">
+                            <div class="review">
+                                <p>"The atmosphere of the cafe was also very nice and cozy, making it a perfect spot to
+                                    relax and enjoy our coffee and crepe on a rainy Sunday. I highly recommend Crepes &
+                                    Coffee - it's definitely one of my favorite places to eat in town!"</p>
+                                <div class="star-rating">★★★★★</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="pagination-dots" style="text-align:center">
+                        <span class="dot review-dot" onclick="currentReviewSlide(1)"></span>
+                        <span class="dot review-dot" onclick="currentReviewSlide(2)"></span>
+                        <span class="dot review-dot" onclick="currentReviewSlide(3)"></span>
+
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class='About-us'>
+                    <h2>Behind the Scenes at Les Crêpes</h2>
+                    <div class="content-box">
+                        <img src="Images/Aboutus.jpg" alt="Interior of Les Crêpes" class="content-image">
+                        <div class="text-content">
+                            <p>Welcome to Les Crêpes, where tradition meets innovation in a cozy corner of Kitchener.
+                                Our story began with a simple yet ambitious dream: to bring a slice of the French
+                                countryside to the heart of the city, one crepe at a time. In our kitchen, the aroma of
+                                butter sizzles on the griddle, and the air carries the scent of sweet and savory
+                                delights, weaving the very essence of France into our local fabric. Our crepes are more
+                                than just food; they are folded with passion, filled with quality local and ingredients,
+                                and served with a side of conviviality.
+
+                                At Les Crêpes, we cherish the art of fine dining as much as the joy of a casual bite.
+                                Whether you're here for a quick lunch or a lingering brunch, we invite you to find a
+                                spot, take a moment, and savor the flavors carefully crafted by our skilled chefs. From
+                                the classic 'Nutella Crepe' to our innovative 'Cheese & Ham Crepe', there's a story in
+                                every bite.</p>
+<br>
+                            <p>Our doors opened with the vision of creating a space where people could gather, pause
+                                from the hustle of daily life, and enjoy the simple pleasures. We are more than a
+                                crêperie; we are a retreat, a place where every customer is treated like a guest in our
+                                home.
+
+                                So come in, pull up a chair, and let us transport you to the streets of Paris with the
+                                perfect crepe, paired with a cup of our finest brew. Because here at Les Crêpes, we
+                                believe that every meal should be an experience, a memory to cherish, and a taste of joy
+                                to carry with you.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+           
+            
+    </main>
+    <footer class="footer-info">
+        <div class="footer-content">
+            <div class="address">
+                <p>Store Location: <br> 299 Doon Valley Dr.,<br>Kitchener, ON N2G 4M4</p>
+            </div>
+            <div class="hours">
+                <p>Monday - Friday: 9 AM to 7 PM<br>Saturday: 10 AM to 7 PM<br>Sunday: Closed</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; <small>2023 Les Crêpes. All rights reserved.</p></div><small>
+        </div>
+    </footer>
+    <script src="crepe.js"></script>
+</body>
+
+</html>
